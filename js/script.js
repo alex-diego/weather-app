@@ -9,17 +9,16 @@ const App = {
       return;
     }
 
-    fetch(api)
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        DOM.renderLayout(data);
-      })
-      .catch((error) => {
-        alert("Ocorreu algum erro :(")
-        console.log(error)
-      })
+    const getWeather = async () => {
+      const response = await fetch(api)
+      const data = await response.json()
+
+      return data
+    }
+
+    getWeather().then((data) => {
+      DOM.renderLayout(data)
+    })
   }
 }
 
