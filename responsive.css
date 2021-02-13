@@ -1,0 +1,37 @@
+
+@media (max-width: 768px) {
+  .container {
+    font-size: 65%;
+  }
+
+  .bar-container {
+    width: 100px;
+  }
+
+  .icon {
+    width: 50px;
+  }
+}
+
+@media (max-width: 513px) {
+  .city {
+    font-size: 25px;
+  }
+
+  .degrees {
+    font-size: 35px;
+    margin-top: 5px;
+  }
+
+  .degrees span {
+    font-size: 20px;
+  }
+
+  .search-city {
+    width: 200px;
+  }
+
+  .min-max-container {
+    display: none;
+  }
+}
